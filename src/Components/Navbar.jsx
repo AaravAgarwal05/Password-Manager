@@ -7,13 +7,13 @@ const Navbar = () => {
       <div className="font-bold text-4xl text-green-400">&lt;<span className="text-white ">Password Manager</span>/&gt;</div>
       <ul className="flex font-medium justify-center gap-8 items-center text-center mt-4">
         <li className="hover:font-bold">
-          <Link to="/Password-Manager/">Home</Link>
+          <Link to="/">Home</Link>
         </li>
         <li className="hover:font-bold">
-          <Link to="/Password-Manager/About">About</Link>
+          <Link to="/About">About</Link>
         </li>
         <li className="hover:font-bold">
-          <Link to="/Password-Manager/Contact">Contact</Link>
+          <Link to="/Contact">Contact</Link>
         </li>
       </ul>
     </nav>

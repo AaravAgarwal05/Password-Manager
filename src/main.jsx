@@ -9,12 +9,12 @@ import Contact from "./Components/Contact";
 const root = createRoot(document.getElementById("root"));
 
 root.render(
-  <BrowserRouter>
+  <BrowserRouter basename="/Password-Manager">
     <React.StrictMode>
       <Routes>
-        <Route path="/Password-Manager/" element={<Home />} />
-        <Route path="/Password-Manager/About" element={<About />} />
-        <Route path="/Password-Manager/Contact" element={<Contact />} />
+        <Route path="/" element={<Home />} />
+        <Route path="/About" element={<About />} />
+        <Route path="/Contact" element={<Contact />} />
       </Routes>
     </React.StrictMode>
   </BrowserRouter>
