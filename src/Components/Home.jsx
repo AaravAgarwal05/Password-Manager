@@ -156,7 +156,7 @@ const Home = () => {
       />
       {}
       <ToastContainer />
-      <div className="text-white absolute inset-0 -z-10 lg:h-full h-fit w-full items-center [background:radial-gradient(125%_125%_at_50%_10%,#000_40%,#63e_100%)]">
+      <div className="text-white absolute inset-0 -z-10 2xl:h-auto h-fit w-full items-center [background:radial-gradient(125%_125%_at_50%_10%,#000_40%,#63e_100%)]">
         <Navbar />
         <div className="mx-auto md:container md:px-40 md:">
           <h1 className="text-4xl font-bold text-center">
