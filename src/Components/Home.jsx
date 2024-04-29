@@ -36,7 +36,7 @@ const Home = () => {
     } else {
       x.type = "password";
     }
-}
+  }
   const SavePassword = () => {
     if (
       password.site === "" ||
@@ -75,10 +75,10 @@ const Home = () => {
         "passwords",
         JSON.stringify(passwordArray.filter((pass) => pass.id !== id))
       );
+      setTimeout(() => {
+        DeletedSuccessfully();
+      }, 100);
     }
-    setTimeout(() => {
-      DeletedSuccessfully();
-    }, 100);
   };
   const UpdatePassword = (id) => {
     setPassword(passwordArray.filter((pass) => pass.id === id)[0]);
@@ -192,14 +192,14 @@ const Home = () => {
                   onChange={HandleChange}
                   placeholder="Enter Password"
                   className="rounded-full w-full py-1 px-2"
-                  type="text"
+                  type="password"
                   name="pass"
                 />
                 <span
                   className="absolute top-[5px] right-1 w-6"
                   onClick={ShowHide}
                 >
-                  <img ref={ref} src="Icons/Show.svg" alt="Show" />
+                  <img ref={ref} src="Icons/Hide.svg" alt="Show" />
                 </span>
               </div>
             </div>
@@ -226,10 +226,10 @@ const Home = () => {
               <table className="table-auto w-full text-xl font-semibold">
                 <thead>
                   <tr>
-                    <th className="py-2 w-1/5">Website</th>
-                    <th className="py-2 w-1/5">Username</th>
-                    <th className="py-2 w-1/5">Password</th>
-                    <th className="py-2 w-1/5">Actions</th>
+                    <th className="py-2 w-1/6">Website</th>
+                    <th className="py-2 w-1/6">Username</th>
+                    <th className="py-2 w-1/6">Password</th>
+                    <th className="py-2 w-1/6">Actions</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -281,7 +281,7 @@ const Home = () => {
                       </td>
                       <td className="text-center py-2">
                         <div className="flex items-center justify-center">
-                          <span>{pass.pass}</span>
+                          <span>{"*".repeat(pass.pass.length)}</span>
                           <div
                             className="w-fit"
                             onClick={() => {
