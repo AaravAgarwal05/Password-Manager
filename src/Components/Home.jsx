@@ -166,7 +166,7 @@ const Home = () => {
             </span>
           </h1>
           <p className="text-2xl text-center mt-4 mb-4 font-semibold">
-            Your Own Password Manager.
+            Your Own Password Manager which uses LocalStorage to save your password.
           </p>
           <div className="flex flex-col p-4 text-black sm:gap-8 gap-2 font-semibold">
             <input
