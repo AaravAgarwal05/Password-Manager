@@ -7,7 +7,7 @@ const Contact = () => {
     <>
       <div className="text-white absolute inset-0 -z-10 h-full items-center px-5 [background:radial-gradient(125%_125%_at_50%_10%,#000_40%,#63e_100%)]">
         <Navbar />
-        <div className="flex flex-col container mx-auto gap-5 h-4/6">
+        <div className="flex flex-col container mx-auto gap-5 h-3/5">
           <h1 className="font-bold text-2xl">Get in Touch</h1>
           <p className="font-semibold text-xl">
             Have questions, feedback, or suggestions? We'd love to hear from
