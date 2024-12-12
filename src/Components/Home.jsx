@@ -162,7 +162,7 @@ const Home = () => {
           <h1 className="text-4xl font-bold text-center">
             Welcome to
             <span className="font-bold text-4xl text-green-400">
-              &lt;<span className="text-white ">Password Manager</span>/&gt;
+              &lt;<span className="text-white ">Your Personal Password Manager</span>/&gt;
             </span>
           </h1>
           <p className="text-2xl text-center mt-4 mb-4 font-semibold">
